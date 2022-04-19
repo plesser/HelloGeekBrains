@@ -1,18 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:fontFamily="cursive"
+            android:text="@string/helloworld" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:fontFamily="casual"
+            android:text="@string/helloworld" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00FF00"
+            android:fontFamily="serif"
+            android:text="@string/helloworld" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="cursive"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:hint="@string/helloworld"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="casual"
+            android:minHeight="48dp"
+            android:inputType="number"
+            android:hint="@string/numbers"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="20sp"
+            android:hint="@string/birthday"
+            android:textStyle="bold"
+            android:inputType="date"
+            android:textColor="#00FF00"
+            android:fontFamily="serif"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:fontFamily="cursive"
+            android:text="@string/helloworld" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:fontFamily="casual"
+            android:text="@string/helloworld" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:checked="false"
+            android:text="Hello Java" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:checked="true"
+            android:text="Hello Kotlin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_margin="12dp"
+            android:text="Hello world!" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:checked="true"
+            android:fontFamily="casual"
+            android:text="Hello Java" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_margin="12dp"
+            android:text="Hello Kotlin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:checked="true"
+            android:layout_margin="12dp"
+            android:text="Hello world!" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textOn="включили"
+            android:textOff="выключили"
+            android:text="Hello Java" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_margin="12dp"
+            android:checked="true"
+            android:text="Hello Kotlin" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:ems="10"
+        android:text="MMMMMMMMMM"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
