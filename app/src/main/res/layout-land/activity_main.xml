@@ -6,14 +6,22 @@
     android:background="@drawable/backgrounds3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <include
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
         android:id="@+id/display"
         layout="@layout/activity_display"/>
 
     <include
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
         android:id="@+id/buttons"
         layout="@layout/activity_button"/>
 
